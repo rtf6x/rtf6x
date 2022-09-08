@@ -1,4 +1,9 @@
-### Hello there 👋
+### Hello there!
+
+![](/MeagerHardtofindAlbertosaurus-size_restricted.gif)  
+[Source](https://gfycat.com/meagerhardtofindalbertosaurus-hello-there-star-wars-prequelmemes)
+
+![](https://komarev.com/ghpvc/?username=rtf6x)
 
 <!--
 **rtf6x/rtf6x** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
