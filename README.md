@@ -1,8 +1,5 @@
 ### Hello there!
 
-![](/hello.gif)  
-[Source](https://gfycat.com/meagerhardtofindalbertosaurus-hello-there-star-wars-prequelmemes)
-
 ![](https://komarev.com/ghpvc/?username=rtf6x)
 
 <!--
