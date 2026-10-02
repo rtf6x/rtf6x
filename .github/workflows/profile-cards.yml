@@ -1,0 +1,38 @@
+name: Profile Cards
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# The action commits its own output; a second run writing the same branch at
+# once would only fight it. One at a time, never cancelled mid-push.
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Render profile cards
+        uses: seijikohara/profile-cards-action@v1
+        with:
+          # A classic PAT (scopes: repo, read:user). The default runner token is
+          # scoped to this repository alone, so the cadence card's sweep would
+          # see no private repository and the private contribution counts would
+          # come back short.
+          github-token: ${{ secrets.PROFILE_TOKEN }}
+          output-dir: assets
+          themes: light,dark
+          badges: |
+            GitHub
+            npm
+            TypeScript
+          commit: true
